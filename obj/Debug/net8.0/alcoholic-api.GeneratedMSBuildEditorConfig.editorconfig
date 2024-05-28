@@ -1,0 +1,59 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = alcoholic-api
+build_property.RootNamespace = alcoholic-api
+build_property.ProjectDir = /home/santy/Escritorio/PROJECTS C#/alcoholic-api/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/santy/Escritorio/PROJECTS C#/alcoholic-api
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Components/Banner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9CYW5uZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Components/Search.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TZWFyY2gucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Components/SetInfoAPI.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TZXRJbmZvQVBJLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Pages/ApiConsumer.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBpQ29uc3VtZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Pages/InternalComponents.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW50ZXJuYWxDb21wb25lbnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

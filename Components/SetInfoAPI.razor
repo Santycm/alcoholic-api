@@ -1,0 +1,68 @@
+@inject CocktailInfoService CocktailInfoService
+
+<div class="items-body">
+    <div class="list">
+        <h2>Categorías</h2>
+        <ul>
+            @if(categories == null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                @foreach(CocktailInfoService.Category category in categories)
+                {
+                    <li>@category.strCategory</li>
+                }
+            }
+            
+        </ul>
+    </div>
+    <div class="list">
+        <h2>Ingredientes</h2>
+        <ul>
+            @if(ingredients == null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                @foreach(CocktailInfoService.Ingredient ingredient in ingredients)
+                {
+                    <li>@ingredient.strIngredient1</li>
+                }
+            }
+            
+        </ul>
+    </div>
+    <div class="list">
+        <h2>Botellas & Copas</h2>
+        <ul>
+            @if(glasses == null)
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                @foreach(CocktailInfoService.Glass glass in glasses)
+                {
+                    <li>@glass.strGlass</li>
+                }
+            }
+            
+        </ul>
+    </div>
+</div>
+
+@code{
+    private List<CocktailInfoService.Ingredient> ingredients;
+    private List<CocktailInfoService.Category> categories;
+    private List<CocktailInfoService.Glass> glasses;
+
+    protected override async Task OnInitializedAsync()
+    {
+        this.ingredients = await CocktailInfoService.GetIngredientAsync();
+        this.categories = await CocktailInfoService.GetCategoryAsync();
+        this.glasses = await CocktailInfoService.GetGlassAsync();
+    }
+}

@@ -1,0 +1,64 @@
+@inject CocktailInfoService CocktailInfoService
+
+<input @oninput="UpdateText" @bind="inputText" placeholder="Buscar Cocktail" class="simple-input">
+<div class="search-results">
+    @if (cocktails == null)
+    {
+        <div class="card-search">
+            <p><em>Loading...</em></p>
+        </div>
+    }
+    else
+    {
+        @foreach (CocktailInfoService.Cocktail cocktail in cocktails)
+        {
+            @if(counterLimit > 2)
+            {
+                <div class="card-search">
+                    <a>Ver más</a>
+                </div>
+                break;
+            }else{
+                <a href="@cocktail.idDrink">
+                <div class="card-search">
+                    <div class="card-search-img">
+                        <img src="@cocktail.strDrinkThumb" alt="">
+                    </div>
+                    <div class="card-search-body">
+                        <h3>@cocktail.strDrink</h3>
+                        <div>
+                            <h7>Category: @cocktail.strCategory</h7>
+                            <h7>Alcoholic: @cocktail.strAlcoholic</h7>
+                        </div>
+                    </div>
+                </div>
+                </a>
+                counterLimit++;
+            }
+            
+            
+        }
+    }
+
+</div>
+
+@code {
+    private List<CocktailInfoService.Cocktail> cocktails;
+    public int counterLimit = 0;
+
+    private string inputText = string.Empty;
+
+    private void UpdateText(ChangeEventArgs e)
+    {
+        inputText = e.Value.ToString();
+        counterLimit = 0;
+        OnInitializedAsync();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        this.cocktails = await CocktailInfoService.GetCocktailByNameAsync(inputText);
+    }
+
+    
+}

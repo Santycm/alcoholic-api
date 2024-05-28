@@ -1,0 +1,41 @@
+<div class="image-container">
+    <img src="img/banner2.jpg" style="filter: brightness(0.7);">
+</div>
+<div class="text-banner">
+    <div class="text-banner-initial">
+        <h1>@BannerTextP[0].Title</h1>
+        <p>@BannerTextP[0].Description</p>
+        <a href="api-consumer" class="btn-simple">API</a>
+    </div>
+    <div class="card-banner">
+        <div class="card-banner-header">
+            <img src="img/icons/cocktail-4.svg" alt="">
+        </div>
+        <div class="card-banner-body">
+            <h2>@BannerTextP[1].Title</h2>
+            <p>@BannerTextP[1].Description</p>
+        </div>
+    </div>
+</div>
+
+@code{
+    BannerText[] BannerTextP = new BannerText[]
+    {
+        new BannerText()
+        {
+            Title="Componentes internos",
+            Description="Aquí se muestra más información acerca de la API, la unica diferencia es que los componentes visuales se cargan de manera diferente que en el home"
+        },
+        new BannerText()
+        {
+            Title="Sobre la API",
+            Description="Sumérgete en el apasionante mundo de los cócteles con nuestra plataforma especializada en proporcionar acceso a una amplia gama de recetas de bebidas irresistibles. Desde los clásicosatemporales hasta las creaciones más innovadoras, nuestra API te ofrece un tesoro de conocimientos para explorar, experimentar y disfrutar."
+        }
+    };
+
+    public class BannerText
+    {
+        public string? Title {get; set;}
+        public string? Description {get; set;}
+    }
+}
