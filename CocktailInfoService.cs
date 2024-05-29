@@ -41,6 +41,13 @@ public class CocktailInfoService
         return response.Drinks;
     }
 
+    public async Task<List<Cocktail>> GetCocktailByIDAsync(int id)
+    {
+        string url = $"https://thecocktaildb.com/api/json/v1/1/lookup.php?i={id}";
+        var response = await this._httpClient.GetFromJsonAsync<DrinksList>(url);
+        return response.Drinks;
+    }
+
     //Lists
 
     public class DrinksListIngredient
@@ -86,6 +93,8 @@ public class CocktailInfoService
         public string? strDrink { get; set; }
         public string? strCategory { get; set; }
         public string? strAlcoholic { get; set; }
+        public string? strGlass { get; set; }
+        public string? strInstructions { get; set; }
         public string? strDrinkThumb { get; set; }
     }
 }

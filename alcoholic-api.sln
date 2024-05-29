@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "alcoholic-api", "alcoholic-api.csproj", "{46CFCF92-ADE4-46EE-8F1C-10FF5B43FAB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46CFCF92-ADE4-46EE-8F1C-10FF5B43FAB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46CFCF92-ADE4-46EE-8F1C-10FF5B43FAB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46CFCF92-ADE4-46EE-8F1C-10FF5B43FAB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46CFCF92-ADE4-46EE-8F1C-10FF5B43FAB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DC1F4D0-7449-4942-B986-684834F7FA18}
+	EndGlobalSection
+EndGlobal

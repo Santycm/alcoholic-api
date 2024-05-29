@@ -1,0 +1,48 @@
+@page "/cocktail/{id:int}"
+@inject CocktailInfoService CocktailInfoService
+
+<PageTitle>Cocktail Info</PageTitle>
+@if (cocktails == null)
+{
+    <h1><em>Loading...</em></h1>
+}
+else
+{
+    @foreach (CocktailInfoService.Cocktail cocktail in cocktails)
+    {
+        <div class="cocktail-container">
+            <div class="cocktail-text">
+                <div>
+                    <h1>@cocktail.strDrink</h1>
+                    <h4>Category:</h4>
+                    <p>@cocktail.strCategory</p>
+                    <h4>Alcoholic:</h4>
+                    <p>@cocktail.strAlcoholic</p>
+                    <h4>Glass:</h4>
+                    <p>@cocktail.strGlass</p>
+                    <h4>Instructions:</h4>
+                    <p>@cocktail.strInstructions</p>
+                </div>
+                <div class="btn">
+                    <a href="api-consumer" class="btn-simple">Volver</a>
+                </div>
+            </div>
+            <div class="cocktail-image-info">
+                <img src="@cocktail.strDrinkThumb" alt="">
+            </div>
+        </div>
+    }
+}
+
+
+
+@code {
+    [Parameter]
+    public int id { get; set; }
+    private List<CocktailInfoService.Cocktail> cocktails;
+
+    protected override async Task OnInitializedAsync()
+    {
+        this.cocktails = await CocktailInfoService.GetCocktailByIDAsync(id);
+    }
+}

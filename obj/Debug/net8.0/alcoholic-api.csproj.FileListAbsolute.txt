@@ -1026,3 +1026,4 @@
 /home/santy/Escritorio/PROJECTS C#/alcoholic-api/obj/Debug/net8.0/refint/alcoholic-api.dll
 /home/santy/Escritorio/PROJECTS C#/alcoholic-api/obj/Debug/net8.0/alcoholic-api.pdb
 /home/santy/Escritorio/PROJECTS C#/alcoholic-api/obj/Debug/net8.0/ref/alcoholic-api.dll
+/home/santy/Escritorio/PROJECTS C#/alcoholic-api/obj/Debug/net8.0/alcoholic-api.sourcelink.json

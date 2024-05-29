@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("alcoholic-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6bd0fa123d6bc625b1c13dbef9f1ce99db585d4c")]
 [assembly: System.Reflection.AssemblyProductAttribute("alcoholic-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("alcoholic-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -313,6 +313,7 @@ nav {
 }
 a{
     text-decoration: none;
+    width: 445px;
 }
 .card-search-img{
     display:flex;
@@ -321,6 +322,40 @@ a{
     img{
         border-radius: 5px;
         width: 50px;
+    }
+}
+
+.cocktail-container{
+    margin: 120px 100px; 
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(13, 3, 36);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cocktail-text{
+    display: flex;
+    flex-direction: column;
+    div h1, p{
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .btn {
+        margin-top: 30px;
+        text-align: start;
+    }
+}
+
+.cocktail-image-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img{
+        width: 500px;
+        border-radius: 10px;
     }
 }
 

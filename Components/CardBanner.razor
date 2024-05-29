@@ -1,0 +1,16 @@
+<div class="card-banner">
+    <div class="card-banner-header">
+        <img src="img/icons/cocktail-4.svg" alt="">
+    </div>
+    <div class="card-banner-body">
+        <h2>@Title</h2>
+        <p>@Description</p>
+    </div>
+</div>
+
+@code{
+    [Parameter]
+    public string? Title {get; set;}
+    [Parameter]
+    public string? Description {get; set;}
+}

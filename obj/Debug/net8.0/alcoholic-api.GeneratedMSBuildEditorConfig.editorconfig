@@ -26,16 +26,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Components/Banner.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9CYW5uZXIucmF6b3I=
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Components/CardBanner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9DYXJkQmFubmVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Components/Search.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TZWFyY2gucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Components/SetCardsHome.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TZXRDYXJkc0hvbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Components/SetInfoAPI.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9TZXRJbmZvQVBJLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Components/TextBanner.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9UZXh0QmFubmVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Layout/MainLayout.razor]
@@ -44,6 +52,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Pages/ApiConsumer.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXBpQ29uc3VtZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Pages/CocktailPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29ja3RhaWxQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/santy/Escritorio/PROJECTS C\#/alcoholic-api/Pages/Home.razor]
