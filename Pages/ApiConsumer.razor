@@ -1,6 +1,7 @@
 @page "/api-consumer"
 
 @using alcoholic_api.Components
+@inject CocktailInfoService CocktailInfoService
 
 <div class="image-container">
     <img src="img/banner3.jpg" alt="" style="filter: brightness(0.6);">
@@ -9,6 +10,98 @@
     <div class="text-banner-initial">
         <h1>Bienvenido al API CONSUMER</h1>
         <p>Aquí puedes buscar y filtrar los cocteles segun categoría, copa o vino e ingredientes</p>
-        <Search/>
+        <Search />
     </div>
 </div>
+<div class="filters-container">
+    <div>
+        <h2>Glasses</h2>
+        <p>Dar clic sobre alguna opción para ver los productos...</p>
+        <div class="filter-card">
+            @if(glasses==null)
+            {
+                <button><em>Cargando...</em></button>
+            }
+            else
+            {
+                @foreach(CocktailInfoService.Glass glass in glasses)
+                {
+                    <button onclick="@(()=> ShowProducts(glass.strGlass))">
+                        @glass.strGlass
+                        @if(btnShowProduct && btnStr==glass.strGlass)
+                        {
+                            <span>&#x25B2</span>
+                        }
+                        else
+                        {
+                            <span>&#x25BE</span>
+                        }
+                    </button>
+                    <div class="filter-content">
+                    @if(btnShowProduct && btnStr==glass.strGlass)
+                    {
+                        
+                        <FilterContent filter="@glass.strGlass" type="glasses"/>
+                        
+                    }
+                    </div>
+                }
+            }
+        </div>
+    </div>
+    <div>
+        <h2>Categories</h2>
+        <p>Dar clic sobre alguna opción para ver los productos...</p>
+        <div class="filter-card">
+            @if(categories==null)
+            {
+                <button><em>Cargando...</em></button>
+            }
+            else
+            {
+                @foreach(CocktailInfoService.Category category in categories)
+                {
+                    <button onclick="@(()=> ShowProducts(category.strCategory))">
+                        @category.strCategory
+                        @if(btnShowProduct && btnStr==category.strCategory)
+                        {
+                            <span>&#x25B2</span>
+                        }
+                        else
+                        {
+                            <span>&#x25BE</span>
+                        }
+                    </button>
+                    <div class="filter-content">
+                    @if(btnShowProduct && btnStr==category.strCategory)
+                    {
+                        
+                        <FilterContent filter="@category.strCategory" type="categories"/>
+                        
+                    }
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@code{
+    private List<CocktailInfoService.Glass> glasses;
+    private List<CocktailInfoService.Category> categories;
+    protected override async Task OnInitializedAsync()
+    {
+        this.glasses = await CocktailInfoService.GetGlassAsync();
+        this.categories = await CocktailInfoService.GetCategoryAsync();
+    }
+
+    public bool btnShowProduct = false;
+    public string btnStr {get; set;}
+
+    public void ShowProducts(string name)
+    {
+        btnStr = name;
+        btnShowProduct = !btnShowProduct;
+        StateHasChanged();
+    }
+}

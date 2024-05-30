@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "alcoholic-api",
   "resources": {
-    "hash": "sha256-Zb2sog7LoLl1X7cGq1JMoR4fbghHHkw308iHrr8fIpU=",
+    "hash": "sha256-u4e/iHs6NW+s2vvSC9I1q6RDv4ji6yoREx5EDpJjqpo=",
     "jsModuleNative": {
       "dotnet.native.8.0.3.ywgtqgvd9n.js": "sha256-D4sYBYmDfH/YekgYRgX959/2RG6k28sJSHmcsn+iikk="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-/xjZuJwCmantx5vGyH5ZZ8keySSTeu+YHKQRJbZzcuM=",
       "netstandard.wasm": "sha256-vuFKmCGJbyv85DrzI6S1ZvCikuhIllH6hqbXIL+fUAA=",
       "System.Private.CoreLib.wasm": "sha256-SZkozEDkHEFN0VaDmhl2HOenGaqTOmHqEGkraz3Aejc=",
-      "alcoholic-api.wasm": "sha256-zGdJUMu0ScoHSQ4BtAszddkJe7m/Zz+2QZ3s+Iic7sM="
+      "alcoholic-api.wasm": "sha256-0gUg31mzIMkjKRkyxpwdaapTFZnBVsF3w8PN42UtLvM="
     },
     "pdb": {
-      "alcoholic-api.pdb": "sha256-fzKpIEt7XounwI+vWqeKwByeAUNRrPeuhVHD0EGZHe0="
+      "alcoholic-api.pdb": "sha256-nz0Gz/rBNMOFo7U0jsNeNk8DVZ+MuUH1Hla07zuhMGw="
     }
   },
   "cacheBootResources": true,
