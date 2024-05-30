@@ -1,0 +1,47 @@
+@inject CocktailInfoService CocktailInfoService
+
+
+@if (cocktails == null)
+{
+    <a><em>Cargando..</em></a>
+}
+else
+{
+    @foreach (CocktailInfoService.Cocktail cocktail in cocktails)
+    {
+        <a href="cocktail/@cocktail.idDrink">
+            <div class="cocktail-filter-card">
+                <div class="cocktail-filter-card-image">
+                    <img src="@cocktail.strDrinkThumb" alt="">
+                </div>
+                <div class="cocktail-category-card-text">
+                    <h5>@cocktail.strDrink</h5>
+                </div>
+            </div>
+        </a>
+    }
+}
+
+
+@code {
+    [Parameter]
+    public string? filter { get; set; }
+    [Parameter]
+    public string? type {get; set;}
+
+    private List<CocktailInfoService.Cocktail> cocktails;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if(type=="categories")
+        {
+            this.cocktails = await CocktailInfoService.GetCocktailsByCategoryAsync(filter);
+        }
+        
+        if(type=="glasses")
+        {
+            this.cocktails = await CocktailInfoService.GetCocktailsByGlassAsync(filter);
+        }
+        
+    }
+}

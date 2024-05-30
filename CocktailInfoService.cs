@@ -48,6 +48,22 @@ public class CocktailInfoService
         return response.Drinks;
     }
 
+    public async Task<List<Cocktail>> GetCocktailsByGlassAsync(string glass)
+    {
+        glass = glass.Replace(" ", "_");
+        string url = $"https://thecocktaildb.com/api/json/v1/1/filter.php?g={glass}";
+        var response = await this._httpClient.GetFromJsonAsync<DrinksList>(url);
+        return response.Drinks;
+    }
+
+    public async Task<List<Cocktail>> GetCocktailsByCategoryAsync(string category)
+    {
+        category = category.Replace(" ", "_");
+        string url = $"https://thecocktaildb.com/api/json/v1/1/filter.php?c={category}";
+        var response = await this._httpClient.GetFromJsonAsync<DrinksList>(url);
+        return response.Drinks;
+    }
+
     //Lists
 
     public class DrinksListIngredient
