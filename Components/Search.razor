@@ -12,24 +12,25 @@
     {
         @foreach (CocktailInfoService.Cocktail cocktail in cocktails)
         {
-            @if(counterLimit > 2)
+            @if(counterLimit > 3)
             {
                 break;
-            }else{
+            }
+            else
+            {
                 <a href="cocktail/@cocktail.idDrink">
-                <div class="card-search">
-                    
-                    <div class="card-search-img">
-                        <img src="@cocktail.strDrinkThumb" alt="">
-                    </div>
-                    <div class="card-search-body">
-                        <h3>@cocktail.strDrink</h3>
-                        <div>
-                            <h7>Category: @cocktail.strCategory</h7>
-                            <h7>Alcoholic: @cocktail.strAlcoholic</h7>
+                    <div class="card-search">
+                        <div class="card-search-img">
+                            <img src="@cocktail.strDrinkThumb" alt="">
+                        </div>
+                        <div class="card-search-body">
+                            <h3>@cocktail.strDrink</h3>
+                            <div>
+                                <h7>Category: @cocktail.strCategory</h7>
+                                <h7>Alcoholic: @cocktail.strAlcoholic</h7>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </a>
                 counterLimit++;
             }
